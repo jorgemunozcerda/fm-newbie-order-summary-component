@@ -1,0 +1,214 @@
+:root {
+	--pale-blue: #e0e8ff;
+	--bright-blue: #382ae1;
+	--very-pale-blue: #f7f9ff;
+	--desaturated-blue: #717fa6;
+	--dark-blue: #1f2e55;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--pale-blue);
+	position: relative;
+    font-family: 'Red Hat Display';
+}
+
+.background-pattern {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.background-pattern img {
+    width: 100%;
+}
+
+main {
+	position: relative;
+    z-index: 1;
+}
+
+.card {
+    background: white;
+    width: 450px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    overflow: hidden;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+}
+
+.card .header {
+    width: 100%;
+}
+
+.card .header img {
+    width: 100%;
+}
+
+.card .title {
+    margin-top: 45px;
+}
+
+.card .title h1 {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 37px;
+    color: var(--dark-blue);
+}
+
+
+.card .description {
+    margin-top: 17px;
+    margin-left: 48px;
+    margin-right: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--desaturated-blue);
+    text-align: center;
+}
+
+.card .plan-summary {
+    margin-top: 20px;
+    display: flex;
+    width: 354px;
+    align-items: center;
+    background: var(--very-pale-blue);
+    border-radius: 11px;
+    padding: 24px;
+}
+
+.card .plan-summary .plan-summary-text {
+    margin-left: 20px;
+    margin-right: 94px;
+}
+
+.card .plan-summary .plan-summary-text h2 {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--dark-blue);
+}
+
+.card .plan-summary .plan-summary-text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21pz;
+    color: var(--desaturated-blue);
+}
+
+.card .plan-summary a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--bright-blue);
+}
+
+.card .pay-button {
+    margin-top: 32px;
+    width: 354px;
+    height: 50px;
+    border: none;
+    background: var(--bright-blue);
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 11px;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+.card .pay-button:hover {
+    cursor: pointer;
+}
+
+.card .cancel-button {
+    margin-top: 32px;
+    margin-bottom: 48px;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--desaturated-blue);
+    border: none;
+    background-color: white;
+}
+
+.card .cancel-button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 327px;
+    }
+
+    .card .title {
+        margin-top: 32px;
+    }
+
+    .card .title h1 {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .card .description {
+        margin-top: 16px;
+        font-size: 15px;
+        line-height: 25px;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+
+    .card .plan-summary {
+        width: 279px;
+        padding: 16px;
+    }
+
+    .card .plan-summary .plan-summary-text {
+        margin-left: 20px;
+        margin-right: 47px;
+    }
+
+    .card .plan-summary .plan-summary-text h2 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .card .plan-summary .plan-summary-text p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .card .plan-summary .plan-summary-text a {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .card .pay-button {
+        margin-top: 24px;
+        width: 279px;
+        height: 50px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .card .cancel-button {
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+}
