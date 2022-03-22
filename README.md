@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/order-summary-component-using-html-and-css-_FLQLemJ1)
 - [Github Pages Live Demo](https://jorgemunozcerda.github.io/fm-newbie-order-summary-component/)
 
 ## My process
